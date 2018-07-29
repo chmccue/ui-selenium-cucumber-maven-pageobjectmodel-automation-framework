@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="9.464094">
+<testcase classname="Search Google for links" name="Search for Facebook" time="9.464094">
+<system-out><![CDATA[Given I want to go on "Facebook"............................................passed
+When I search on Google.....................................................passed
+Then I should see the search results for "Facebook".........................passed
+]]></system-out>
+</testcase>
+</testsuite>
