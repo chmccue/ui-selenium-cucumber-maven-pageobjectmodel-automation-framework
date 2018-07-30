@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pageObject.HomePage;
-import webDriver.Driver;
+import sharedResources.webDriver.Driver;
 
 
 public class GoogleSearch_Action {

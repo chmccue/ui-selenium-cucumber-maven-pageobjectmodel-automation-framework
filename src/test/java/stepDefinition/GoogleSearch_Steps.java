@@ -18,11 +18,12 @@ public class GoogleSearch_Steps {
 		this.website = website;
 	}
 
+	/*
 	@When("^(?:I|I have) search|searched on Google$")
 	public void i_search_on_google() throws Throwable {
 		String searchCriteria = website;
 		GoogleSearch_Action.search(searchCriteria);
-	}
+	}*/
 	
 	@Then("^I should see the search results for \"([^\"]*)\"$")
 	public void i_should_see_the_search_results_for(String searchCriteria) throws Throwable {

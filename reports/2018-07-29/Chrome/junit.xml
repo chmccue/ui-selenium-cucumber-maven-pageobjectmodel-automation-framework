@@ -1,8 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="9.464094">
-<testcase classname="Search Google for links" name="Search for Facebook" time="9.464094">
-<system-out><![CDATA[Given I want to go on "Facebook"............................................passed
-When I search on Google.....................................................passed
-Then I should see the search results for "Facebook".........................passed
-]]></system-out>
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="5" tests="5" time="0.003865">
+<testcase classname="Navigate site" name="Navigate main menu" time="0.00161">
+<skipped><![CDATA[Given I want to navigate the main menu......................................undefined
+When I select "<menu>" item.................................................undefined
+Then I should be on "<menu>" page...........................................undefined
+]]></skipped>
+</testcase>
+<testcase classname="Navigate site" name="Navigate archives menu" time="0.000467">
+<skipped><![CDATA[Given I want to navigate the archives menu..................................undefined
+Then I select each menu and confirm it goes to the correct page.............undefined
+]]></skipped>
+</testcase>
+<testcase classname="Search for articles" name="Search term to find more than 1 articles" time="0.00059">
+<skipped><![CDATA[Given I want to find many articles..........................................undefined
+When I search for "test automation".........................................skipped
+Then I should see search results for "test automation"......................undefined
+]]></skipped>
+</testcase>
+<testcase classname="Search for articles" name="Search term to find only 1 article" time="0.000589">
+<skipped><![CDATA[Given I want to find only 1 article.........................................undefined
+When I search for "python.org"..............................................skipped
+Then I should see only a single search result for "python.org"..............undefined
+]]></skipped>
+</testcase>
+<testcase classname="Search for articles" name="Search term to find no articles" time="0.000609">
+<skipped><![CDATA[Given I want to find only no articles.......................................undefined
+When I search for "nope"....................................................skipped
+Then I should see no articles found.........................................undefined
+]]></skipped>
 </testcase>
 </testsuite>

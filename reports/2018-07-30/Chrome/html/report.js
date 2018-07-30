@@ -13,11 +13,11 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 279543,
+  "duration": 188643,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1212986,
+  "duration": 1138213,
   "status": "passed"
 });
 formatter.scenario({
@@ -81,28 +81,48 @@ formatter.step({
   ],
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "Navigation_Steps.i_want_to_navigate_the_main_menu()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 149312552,
+  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat stepDefinition.Navigation_Steps.i_want_to_navigate_the_main_menu(Navigation_Steps.java:14)\r\n\tat ✽.Given I want to navigate the main menu(Navigation.feature:9)\r\n",
+  "status": "pending"
 });
-formatter.match({});
+formatter.match({
+  "arguments": [
+    {
+      "val": "\u003cmenu\u003e",
+      "offset": 10
+    }
+  ],
+  "location": "Navigation_Steps.i_select_item(String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "\u003cmenu\u003e",
+      "offset": 16
+    }
+  ],
+  "location": "Navigation_Steps.i_should_be_on_page(String,DataTable)"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 117780,
+  "duration": 130975,
   "status": "passed"
 });
 formatter.before({
-  "duration": 52781,
+  "duration": 54247,
   "status": "passed"
 });
 formatter.before({
-  "duration": 379730,
+  "duration": 2688899,
   "status": "passed"
 });
 formatter.scenario({
@@ -123,16 +143,22 @@ formatter.step({
   "name": "I select each menu and confirm it goes to the correct page",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "Navigation_Steps.i_want_to_navigate_the_archives_menu()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 316198,
+  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat stepDefinition.Navigation_Steps.i_want_to_navigate_the_archives_menu(Navigation_Steps.java:35)\r\n\tat ✽.Given I want to navigate the archives menu(Navigation.feature:20)\r\n",
+  "status": "pending"
+});
+formatter.match({
+  "location": "Navigation_Steps.i_select_each_menu_and_confirm_it_goes_to_the_correct_page()"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 34699,
+  "duration": 35188,
   "status": "passed"
 });
 formatter.uri("Search.feature");
@@ -150,11 +176,11 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 52781,
+  "duration": 64021,
   "status": "passed"
 });
 formatter.before({
-  "duration": 501908,
+  "duration": 981335,
   "status": "passed"
 });
 formatter.scenario({
@@ -172,38 +198,57 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "I search for \"test automation\"",
+  "name": "I search for \"automation\"",
   "keyword": "When "
 });
 formatter.step({
   "line": 11,
-  "name": "I should see search results for \"test automation\"",
+  "name": "I should see search results for \"automation\"",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "Search_Steps.i_want_to_find_many_articles()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 1223248,
+  "status": "passed"
 });
 formatter.match({
-  "location": "GoogleSearch_Steps.i_search_on_google()"
+  "arguments": [
+    {
+      "val": "automation",
+      "offset": 14
+    }
+  ],
+  "location": "Search_Steps.i_search_for(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 24218698059,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "arguments": [
+    {
+      "val": "automation",
+      "offset": 33
+    }
+  ],
+  "location": "Search_Steps.i_should_see_search_results_for(String)"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 184617663,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 35187,
+  "duration": 39586,
   "status": "passed"
 });
 formatter.before({
-  "duration": 55713,
+  "duration": 47893,
   "status": "passed"
 });
 formatter.before({
-  "duration": 504840,
+  "duration": 482360,
   "status": "passed"
 });
 formatter.scenario({
@@ -229,30 +274,55 @@ formatter.step({
   "name": "I should see only a single search result for \"python.org\"",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 20
+    }
+  ],
+  "location": "Search_Steps.i_want_to_find_only_article(int)"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 1381103,
+  "status": "passed"
 });
 formatter.match({
-  "location": "GoogleSearch_Steps.i_search_on_google()"
+  "arguments": [
+    {
+      "val": "python.org",
+      "offset": 14
+    }
+  ],
+  "location": "Search_Steps.i_search_for(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1188169140,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "arguments": [
+    {
+      "val": "python.org",
+      "offset": 46
+    }
+  ],
+  "location": "Search_Steps.i_should_see_only_a_single_search_result_for(String)"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 126568340,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 28834,
+  "duration": 28345,
   "status": "passed"
 });
 formatter.before({
-  "duration": 46917,
+  "duration": 50826,
   "status": "passed"
 });
 formatter.before({
-  "duration": 533675,
+  "duration": 452060,
   "status": "passed"
 });
 formatter.scenario({
@@ -265,7 +335,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 19,
-  "name": "I want to find only no articles",
+  "name": "I want to find no articles",
   "keyword": "Given "
 });
 formatter.step({
@@ -278,22 +348,35 @@ formatter.step({
   "name": "I should see no articles found",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "Search_Steps.i_want_to_find_no_articles()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 118757,
+  "status": "passed"
 });
 formatter.match({
-  "location": "GoogleSearch_Steps.i_search_on_google()"
+  "arguments": [
+    {
+      "val": "nope",
+      "offset": 14
+    }
+  ],
+  "location": "Search_Steps.i_search_for(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1242144062,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "location": "Search_Steps.i_should_see_no_articles_found()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 91806190,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 28834,
+  "duration": 66954,
   "status": "passed"
 });
 });

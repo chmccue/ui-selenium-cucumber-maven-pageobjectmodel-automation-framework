@@ -1,6 +1,6 @@
 package stepDefinition;
 
-import webDriver.Driver;
+import sharedResources.webDriver.Driver;
 import cucumber.api.java.en.Then;
 
 public class GeneralPurpose {

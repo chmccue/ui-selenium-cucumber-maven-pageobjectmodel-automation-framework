@@ -6,9 +6,9 @@ import java.io.IOException;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-import supportMethods.FileRead;
-import testRunner.TestRunner;
-import webDriver.Driver;
+import sharedResources.supportMethods.FileRead;
+import sharedResources.testRunner.TestRunner;
+import sharedResources.webDriver.Driver;
 
 public class Hooks {
 	private static Boolean runOnce = false;
