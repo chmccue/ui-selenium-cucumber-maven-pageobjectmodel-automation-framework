@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="126.899727">
+<testcase classname="Contact page" name="Fill out contact page details" time="51.613004">
+<system-out><![CDATA[Given I go to Contact page..................................................passed
+When I fill out the contact form............................................passed
+Then I am able to submit the contact form...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Contact page" name="Pressing submit without completing form" time="23.330275">
+<system-out><![CDATA[Given I go to Contact page..................................................passed
+When I press submit button without filling in form..........................passed
+Then I am not able to submit the contact form...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Navigate site" name="Navigate main menu" time="22.192073">
+<system-out><![CDATA[Given I want to navigate the main menu......................................passed
+Then I navigate the options of the main menu................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Navigate site" name="Navigate archives menu" time="16.93331">
+<system-out><![CDATA[Given I want to navigate the archives menu..................................passed
+Then I navigate the options of the archive menu.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search for articles" name="Search term to find more than 1 articles" time="1.441349">
+<system-out><![CDATA[Given I want to find many articles..........................................passed
+When I search for "automation"..............................................passed
+Then I should see multiple search results for "automation"..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search for articles" name="Search term to find only 1 article" time="0.69933">
+<system-out><![CDATA[Given I want to find only 1 article.........................................passed
+When I search for "python.org"..............................................passed
+Then I should see only a single search result for "python.org"..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Search for articles" name="Search term to find no articles" time="10.690386">
+<system-out><![CDATA[Given I want to find no articles............................................passed
+When I search for "nope"....................................................passed
+Then I should see no articles found.........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

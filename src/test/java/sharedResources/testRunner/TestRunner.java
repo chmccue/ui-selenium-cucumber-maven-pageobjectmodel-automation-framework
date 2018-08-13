@@ -13,7 +13,11 @@ import org.junit.runner.RunWith;
 		features = { "src/test/resources/featureFiles" },
 		glue = {"sharedResources/webDriver", "stepDefinition", "sharedResources/testRunner"},
 		tags = { "~@ignore"},
-		plugin = {"pretty"})
+		monochrome = true,
+		plugin = {"pretty", "html:target/cucumber",
+				"json:target/cucumber.json"
+				//"com.cucumber.listener.ExtentCucumberFormatter:target/report.html"
+		})
 public class TestRunner {
 	
 	public static Map<String, String> config;

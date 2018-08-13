@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: sharedResources.testRunner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 21, Failures: 0, Errors: 0, Skipped: 7, Time elapsed: 27.96 sec - in sharedResources.testRunner.TestRunner
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 127.096 sec - in sharedResources.testRunner.TestRunner

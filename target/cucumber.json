@@ -1,0 +1,172 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 85686,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 614611,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeAll()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Fill out contact page details",
+        "description": "",
+        "id": "contact-page;fill-out-contact-page-details",
+        "after": [
+          {
+            "result": {
+              "duration": 68760,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20299138100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I go to Contact page",
+            "match": {
+              "location": "Contact_Steps.i_go_to_contact_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 524347297,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I fill out the contact form",
+            "match": {
+              "location": "Contact_Steps.i_fill_out_contact_form()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16406420303,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am able to submit the contact form",
+            "match": {
+              "location": "Contact_Steps.i_am_able_to_submit_contact_form()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 30325,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.before(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 282446,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeAll()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Pressing submit without completing form",
+        "description": "",
+        "id": "contact-page;pressing-submit-without-completing-form",
+        "after": [
+          {
+            "result": {
+              "duration": 19393,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3842710056,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I go to Contact page",
+            "match": {
+              "location": "Contact_Steps.i_go_to_contact_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 131510140,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I press submit button without filling in form",
+            "match": {
+              "location": "Contact_Steps.i_press_submit_button_without_filling_in_form()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67579332,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am not able to submit the contact form",
+            "match": {
+              "location": "Contact_Steps.i_am_not_able_to_submit_contact_form()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Contact page",
+    "description": "As a user\r\nI want to fill out contact page details\r\nSo I can test the contact functionality on the site",
+    "id": "contact-page",
+    "keyword": "Feature",
+    "uri": "Contact.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@contact"
+      }
+    ]
+  }
+]

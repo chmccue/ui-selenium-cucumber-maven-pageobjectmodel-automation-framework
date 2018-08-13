@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="sharedResources.testRunner.TestRunner" time="0.003" tests="21" errors="0" skipped="7" failures="0">
+<testsuite name="sharedResources.testRunner.TestRunner" time="0.006" tests="26" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_40\jre\bin"/>
-    <property name="java.vm.version" value="25.40-b25"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
+    <property name="java.vm.version" value="25.181-b13"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="maven.multiModuleProjectDirectory" value="C:\selenium-cucumber-framework"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -14,46 +14,48 @@
     <property name="user.script" value=""/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="C:\selenium-cucumber-framework"/>
-    <property name="java.runtime.version" value="1.8.0_40-b26"/>
+    <property name="java.runtime.version" value="1.8.0_181-b13"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_40\jre\lib\endorsed"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\Chris\AppData\Local\Temp\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\Program Files\Apache Software Foundation\apache-maven-3.3.3\bin\m2.conf"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache\maven\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_40\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\ImageMagick-6.7.6-Q16;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\EgisTec MyWinLocker\x64;C:\Program Files (x86)\EgisTec MyWinLocker\;C:\Python27\Scripts\;C:\Python27\;C:\Git;C:\Users\Chris\AppData\Local\Android\sdk\/tools;C:\Users\Chris\AppData\Local\Android\sdk\/platform-tools;C:\Ant\apache-ant-1.9.4;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;c:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\phantomjs-2.0.0\bin;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.8.0_40\bin;C:\Program Files\Apache Software Foundation\apache-maven-3.3.3\bin;C:\Python27\Lib\site-packages\scrapy;C:\Jython2.5.3;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_181\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Python37-32\Scripts\;C:\Program Files (x86)\Python37-32\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_181;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\apache\maven\bin;C:\Program Files\nodejs\;C:\Users\Chris\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Docker Toolbox;C:\Users\Chris\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Program Files\apache\maven\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="6.1"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\apache\maven\bin\..\lib\jansi-native"/>
     <property name="user.home" value="C:\Users\Chris"/>
     <property name="user.timezone" value="America/Los_Angeles"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="user.name" value="Chris"/>
-    <property name="java.class.path" value="C:\Program Files\Apache Software Foundation\apache-maven-3.3.3\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.class.path" value="C:\Program Files\apache\maven\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_40\jre"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_181\jre"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_40"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_40\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_40\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_40\jre\classes"/>
+    <property name="java.version" value="1.8.0_181"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_181\jre\classes"/>
     <property name="sun.stderr.encoding" value="cp437"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Program Files\Apache Software Foundation\apache-maven-3.3.3"/>
+    <property name="maven.home" value="C:\Program Files\apache\maven\bin\.."/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -62,39 +64,30 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Given I want to navigate the main menu" classname="Scenario: Navigate main menu" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="When I select &quot;&lt;menu&gt;&quot; item" classname="Scenario: Navigate main menu" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="Then I should be on &quot;&lt;menu&gt;&quot; page" classname="Scenario: Navigate main menu" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="Scenario: Navigate main menu" classname="Scenario: Navigate main menu" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="Scenario: Navigate main menu" classname="Scenario: Navigate main menu" time="0.182"/>
-  <testcase name="Given I want to navigate the archives menu" classname="Scenario: Navigate archives menu" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="Then I select each menu and confirm it goes to the correct page" classname="Scenario: Navigate archives menu" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="Scenario: Navigate archives menu" classname="Scenario: Navigate archives menu" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="Scenario: Navigate archives menu" classname="Scenario: Navigate archives menu" time="0.01"/>
+  <testcase name="Given I go to Contact page" classname="Scenario: Fill out contact page details" time="0.001"/>
+  <testcase name="When I fill out the contact form" classname="Scenario: Fill out contact page details" time="0"/>
+  <testcase name="Then I am able to submit the contact form" classname="Scenario: Fill out contact page details" time="0"/>
+  <testcase name="Scenario: Fill out contact page details" classname="Scenario: Fill out contact page details" time="0.001"/>
+  <testcase name="Given I go to Contact page" classname="Scenario: Pressing submit without completing form" time="0"/>
+  <testcase name="When I press submit button without filling in form" classname="Scenario: Pressing submit without completing form" time="0"/>
+  <testcase name="Then I am not able to submit the contact form" classname="Scenario: Pressing submit without completing form" time="0"/>
+  <testcase name="Scenario: Pressing submit without completing form" classname="Scenario: Pressing submit without completing form" time="0.001"/>
+  <testcase name="Given I want to navigate the main menu" classname="Scenario: Navigate main menu" time="0"/>
+  <testcase name="Then I navigate the options of the main menu" classname="Scenario: Navigate main menu" time="0"/>
+  <testcase name="Scenario: Navigate main menu" classname="Scenario: Navigate main menu" time="0.001"/>
+  <testcase name="Given I want to navigate the archives menu" classname="Scenario: Navigate archives menu" time="0"/>
+  <testcase name="Then I navigate the options of the archive menu" classname="Scenario: Navigate archives menu" time="0"/>
+  <testcase name="Scenario: Navigate archives menu" classname="Scenario: Navigate archives menu" time="0.001"/>
   <testcase name="Given I want to find many articles" classname="Scenario: Search term to find more than 1 articles" time="0"/>
   <testcase name="When I search for &quot;automation&quot;" classname="Scenario: Search term to find more than 1 articles" time="0"/>
-  <testcase name="Then I should see search results for &quot;automation&quot;" classname="Scenario: Search term to find more than 1 articles" time="0"/>
-  <testcase name="Scenario: Search term to find more than 1 articles" classname="Scenario: Search term to find more than 1 articles" time="0"/>
+  <testcase name="Then I should see multiple search results for &quot;automation&quot;" classname="Scenario: Search term to find more than 1 articles" time="0"/>
+  <testcase name="Scenario: Search term to find more than 1 articles" classname="Scenario: Search term to find more than 1 articles" time="0.001"/>
   <testcase name="Given I want to find only 1 article" classname="Scenario: Search term to find only 1 article" time="0"/>
   <testcase name="When I search for &quot;python.org&quot;" classname="Scenario: Search term to find only 1 article" time="0"/>
   <testcase name="Then I should see only a single search result for &quot;python.org&quot;" classname="Scenario: Search term to find only 1 article" time="0"/>
-  <testcase name="Scenario: Search term to find only 1 article" classname="Scenario: Search term to find only 1 article" time="0.001"/>
+  <testcase name="Scenario: Search term to find only 1 article" classname="Scenario: Search term to find only 1 article" time="0"/>
   <testcase name="Given I want to find no articles" classname="Scenario: Search term to find no articles" time="0"/>
   <testcase name="When I search for &quot;nope&quot;" classname="Scenario: Search term to find no articles" time="0"/>
   <testcase name="Then I should see no articles found" classname="Scenario: Search term to find no articles" time="0"/>
-  <testcase name="Scenario: Search term to find no articles" classname="Scenario: Search term to find no articles" time="0.002"/>
+  <testcase name="Scenario: Search term to find no articles" classname="Scenario: Search term to find no articles" time="0"/>
 </testsuite>

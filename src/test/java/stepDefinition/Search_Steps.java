@@ -20,8 +20,12 @@ public class Search_Steps {
         SearchArea.enterSearchTermAndPressEnter(searchTerm);
     }
 
-    @Then("^I should see search results for \"([^\"]*)\"$")
+    @Then("^I should see multiple search results for \"([^\"]*)\"$")
     public void i_should_see_search_results_for(String searchTerm) throws Throwable {
+        if (SearchResultsPage.searchResultsPage_ResultCount() > 1) {
+            System.out.println("More than 1 result found"); }
+        else {
+            throw new AssertionError("expected more than 1 result; found 0 or 1"); }
         SearchResultsPage.searchResultsPage();
         SearchResultsPage.searchResultsPage_assertions(searchTerm);
     }
@@ -35,12 +39,12 @@ public class Search_Steps {
         SearchResultsPage.searchResultsPage();
         SearchResultsPage.searchResultsPage_assertions(searchTerm);
 
-        if (SearchResultsPage.searchResultsPage_ResultCount() == 1) {
+        int resultsCount = SearchResultsPage.searchResultsPage_ResultCount();
+        System.out.println(resultsCount);
+        if (resultsCount == 1) {
             System.out.println("only 1 result found"); }
         else {
-            System.out.println("expected 1 result; found 0 or more than 1");
-            //throw AssertionError
-            }
+            throw new AssertionError("expected 1 result; found 0 or more than 1"); }
     }
 
     @Given("^I want to find no articles$")
@@ -51,8 +55,11 @@ public class Search_Steps {
     @Then("^I should see no articles found$")
     public void i_should_see_no_articles_found() throws Throwable {
 
+        if (SearchResultsPage.searchResultsPage_ResultCount() == 0) {
+            System.out.println("0 results found");}
+        else {
+            throw new AssertionError("expected 0 results; found more than 0"); }
         SearchResultsPage.searchResultsPage_NoResults();
         SearchResultsPage.searchResultsPage_NoResultsContent();
-
     }
 }

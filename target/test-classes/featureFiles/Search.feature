@@ -8,7 +8,7 @@ Feature: Search for articles
   Scenario: Search term to find more than 1 articles
     Given I want to find many articles
     When I search for "automation"
-    Then I should see search results for "automation"
+    Then I should see multiple search results for "automation"
 
   Scenario: Search term to find only 1 article
     Given I want to find only 1 article

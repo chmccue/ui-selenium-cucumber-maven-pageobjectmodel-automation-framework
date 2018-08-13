@@ -10,6 +10,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import sharedResources.supportFactory.WebdriverFactory;
+import sharedResources.supportMethods.CustomMethods;
 import sharedResources.testRunner.TestRunner;
 
 public class Driver {
@@ -22,6 +23,7 @@ public class Driver {
 		if (webdriver == null) {
 			webdriver = WebdriverFactory.createWebdriver();
 			webdriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			webdriver.manage().window().maximize();
 
 			webdriver.get(TestRunner.config.get("baseUrl"));
 

@@ -6,9 +6,11 @@ import java.io.IOException;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+
 import sharedResources.supportMethods.FileRead;
 import sharedResources.testRunner.TestRunner;
 import sharedResources.webDriver.Driver;
+
 
 public class Hooks {
 	private static Boolean runOnce = false;
@@ -22,8 +24,7 @@ public class Hooks {
 	
 	@Before
 	public void before(Scenario scenario) {
-		TestRunner.scenario = scenario;
-	}
+		TestRunner.scenario = scenario; }
 
 	@After
 	public void after(Scenario scenario) {

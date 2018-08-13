@@ -7,18 +7,14 @@ Feature: Navigate site
 
   Scenario: Navigate main menu
     Given I want to navigate the main menu
-    When I select "<menu>" item
-    Then I should be on "<menu>" page
-    #Examples:
-      | menu    |
-      | About   |
-      | Home    |
-      | Blog    |
-      | Contact |
+    Then I navigate the options of the main menu
 
+
+  @archiveMenu
   Scenario: Navigate archives menu
     Given I want to navigate the archives menu
-    Then I select each menu and confirm it goes to the correct page
+    Then I navigate the options of the archive menu
+    #Then I select each menu and confirm it goes to the correct page
 
 
 
