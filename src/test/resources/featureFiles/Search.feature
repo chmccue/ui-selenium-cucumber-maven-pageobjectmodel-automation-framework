@@ -1,4 +1,4 @@
-@search
+@all @regression @search
 Feature: Search for articles
   As a user
   I want to use search on website

@@ -1,3 +1,5 @@
+@all
+@regression
 @navigation
 Feature: Navigate site
   As a user

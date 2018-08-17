@@ -1,4 +1,4 @@
-@contact
+@all @regression @contact
 Feature: Contact page
   As a user
   I want to fill out contact page details

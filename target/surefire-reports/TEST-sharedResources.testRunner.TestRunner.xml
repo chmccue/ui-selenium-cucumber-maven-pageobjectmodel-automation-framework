@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="sharedResources.testRunner.TestRunner" time="0.015" tests="1" errors="1" skipped="0" failures="0">
+<testsuite name="sharedResources.testRunner.TestRunner" time="0.008" tests="26" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="cucumber.options" value="--tags @all"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
     <property name="java.vm.version" value="25.181-b13"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
@@ -28,7 +29,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\Program Files\apache\maven\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_181\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Python37-32\Scripts\;C:\Program Files (x86)\Python37-32\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_181;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\apache\maven\bin;C:\Program Files\nodejs\;C:\Users\Chris\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Docker Toolbox;C:\Users\Chris\AppData\Roaming\npm;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_181\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Python37-32\Scripts\;C:\Program Files (x86)\Python37-32\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Java\jdk1.8.0_181;C:\Program Files\Java\jdk1.8.0_181\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Brackets\command;C:\Program Files\Git\cmd;C:\Program Files\apache\maven\bin;C:\Program Files\nodejs\;C:\Users\Chris\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Docker Toolbox;C:\Users\Chris\AppData\Roaming\npm;C:\Users\Chris\Documents\android-sdk\tools;%ANDROID_HOME\platform-tools;;."/>
     <property name="maven.conf" value="C:\Program Files\apache\maven\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -45,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_181\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.options=--tags @all"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -64,63 +65,30 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="initializationError" classname="sharedResources.testRunner.TestRunner" time="0.015">
-    <error message="Couldn&apos;t load plugin class: cucumber.listener.ExtentCucumberFormatter" type="cucumber.runtime.CucumberException"><![CDATA[cucumber.runtime.CucumberException: Couldn't load plugin class: cucumber.listener.ExtentCucumberFormatter
-	at cucumber.runtime.formatter.PluginFactory.loadClass(PluginFactory.java:175)
-	at cucumber.runtime.formatter.PluginFactory.pluginClass(PluginFactory.java:165)
-	at cucumber.runtime.formatter.PluginFactory.getPluginClass(PluginFactory.java:226)
-	at cucumber.runtime.formatter.PluginFactory.isFormatterName(PluginFactory.java:195)
-	at cucumber.runtime.RuntimeOptionsFactory.addPlugins(RuntimeOptionsFactory.java:90)
-	at cucumber.runtime.RuntimeOptionsFactory.buildArgsFromOptions(RuntimeOptionsFactory.java:37)
-	at cucumber.runtime.RuntimeOptionsFactory.create(RuntimeOptionsFactory.java:24)
-	at cucumber.api.junit.Cucumber.<init>(Cucumber.java:56)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
-	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
-	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
-	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)
-	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
-	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: java.lang.ClassNotFoundException: cucumber.listener.ExtentCucumberFormatter
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	at cucumber.runtime.formatter.PluginFactory.loadClass(PluginFactory.java:173)
-	at cucumber.runtime.formatter.PluginFactory.pluginClass(PluginFactory.java:165)
-	at cucumber.runtime.formatter.PluginFactory.getPluginClass(PluginFactory.java:226)
-	at cucumber.runtime.formatter.PluginFactory.isFormatterName(PluginFactory.java:195)
-	at cucumber.runtime.RuntimeOptionsFactory.addPlugins(RuntimeOptionsFactory.java:90)
-	at cucumber.runtime.RuntimeOptionsFactory.buildArgsFromOptions(RuntimeOptionsFactory.java:37)
-	at cucumber.runtime.RuntimeOptionsFactory.create(RuntimeOptionsFactory.java:24)
-	at cucumber.api.junit.Cucumber.<init>(Cucumber.java:56)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
-	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
-	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
-	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)
-	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
-	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]></error>
-  </testcase>
+  <testcase name="Given I go to Contact page" classname="Scenario: Fill out contact page details" time="0.001"/>
+  <testcase name="When I fill out the contact form" classname="Scenario: Fill out contact page details" time="0"/>
+  <testcase name="Then I am able to submit the contact form" classname="Scenario: Fill out contact page details" time="0"/>
+  <testcase name="Scenario: Fill out contact page details" classname="Scenario: Fill out contact page details" time="0.001"/>
+  <testcase name="Given I go to Contact page" classname="Scenario: Pressing submit without completing form" time="0"/>
+  <testcase name="When I press submit button without filling in form" classname="Scenario: Pressing submit without completing form" time="0"/>
+  <testcase name="Then I am not able to submit the contact form" classname="Scenario: Pressing submit without completing form" time="0"/>
+  <testcase name="Scenario: Pressing submit without completing form" classname="Scenario: Pressing submit without completing form" time="0.001"/>
+  <testcase name="Given I want to navigate the main menu" classname="Scenario: Navigate main menu" time="0"/>
+  <testcase name="Then I navigate the options of the main menu" classname="Scenario: Navigate main menu" time="0"/>
+  <testcase name="Scenario: Navigate main menu" classname="Scenario: Navigate main menu" time="0.001"/>
+  <testcase name="Given I want to navigate the archives menu" classname="Scenario: Navigate archives menu" time="0"/>
+  <testcase name="Then I navigate the options of the archive menu" classname="Scenario: Navigate archives menu" time="0"/>
+  <testcase name="Scenario: Navigate archives menu" classname="Scenario: Navigate archives menu" time="0.001"/>
+  <testcase name="Given I want to find many articles" classname="Scenario: Search term to find more than 1 articles" time="0"/>
+  <testcase name="When I search for &quot;automation&quot;" classname="Scenario: Search term to find more than 1 articles" time="0"/>
+  <testcase name="Then I should see multiple search results for &quot;automation&quot;" classname="Scenario: Search term to find more than 1 articles" time="0"/>
+  <testcase name="Scenario: Search term to find more than 1 articles" classname="Scenario: Search term to find more than 1 articles" time="0.002"/>
+  <testcase name="Given I want to find only 1 article" classname="Scenario: Search term to find only 1 article" time="0"/>
+  <testcase name="When I search for &quot;python.org&quot;" classname="Scenario: Search term to find only 1 article" time="0"/>
+  <testcase name="Then I should see only a single search result for &quot;python.org&quot;" classname="Scenario: Search term to find only 1 article" time="0"/>
+  <testcase name="Scenario: Search term to find only 1 article" classname="Scenario: Search term to find only 1 article" time="0.001"/>
+  <testcase name="Given I want to find no articles" classname="Scenario: Search term to find no articles" time="0"/>
+  <testcase name="When I search for &quot;nope&quot;" classname="Scenario: Search term to find no articles" time="0"/>
+  <testcase name="Then I should see no articles found" classname="Scenario: Search term to find no articles" time="0"/>
+  <testcase name="Scenario: Search term to find no articles" classname="Scenario: Search term to find no articles" time="0"/>
 </testsuite>

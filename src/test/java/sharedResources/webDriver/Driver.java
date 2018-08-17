@@ -10,13 +10,11 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import sharedResources.supportFactory.WebdriverFactory;
-import sharedResources.supportMethods.CustomMethods;
 import sharedResources.testRunner.TestRunner;
 
 public class Driver {
 
 	public static WebDriver webdriver;
-	//public static String baseUrl = "https://easierautomation.wordpress.com/"
 
 	public synchronized static WebDriver getCurrentDriver() {
 		
