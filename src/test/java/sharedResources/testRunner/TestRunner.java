@@ -17,14 +17,13 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = { "src/test/resources/featureFiles" },
-		format = {"pretty"},
 		glue = {"sharedResources/webDriver", "stepDefinition", "sharedResources/testRunner"},
 		tags = { "~@ignore"},
 		monochrome = true,
 		plugin = {"pretty",
-				//"html:target/cucumber",
+				"html:target/cucumber",
 				"json:target/cucumber.json"
-				,"com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:output/report.html"
+				,"com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:target/extent/report.html"
 		})
 public class TestRunner {
 

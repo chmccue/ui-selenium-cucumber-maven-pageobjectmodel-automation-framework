@@ -19,11 +19,15 @@ To run the tests on Safari on OS X:
 
 ## Running the tests
 * Open a terminal/command prompt and navigate to the root of the tests
-* Run `mvn test`
+* It's recommended to run the tests with -Dcucumber.options with the @all tag, to run all the test cases: $mvn test -Dcucumber.options="--tags @all"
+* To run tagged test cases, replace "@all" tag with the specific tag you want to run. For example, to run only search tests, enter command: $mvn test -Dcucumber.options="--tags @search"
+* The above command will accurately generate the Extent Report, which is more informative than the standard Cucumber HTML reports.
+* Running without -Dcucumber.options will cause a Null Pointer Exception with the Extent report writer, and won't generate the Extent report.
 
-Reports from the test are output to the folder 'reports', separated into folders based on date, platform and browser.
+Reports from the test are output to the folder 'target', separated into folders based on report type.
+However, if only run using mvn test, reports from the test are output to the folder 'reports', separated into folders based on date, platform and browser. This only outputs default Cucumber html and json reports.
 
-You can also add configurations to the `mvn test` command:
+You can also add additional configurations to the `mvn test` command:
 * Passing through any of the config.properties values as system properties, e.g. `mvn test -Dbrowser=Firefox -DseleniumEnvironment=grid`
 * Specifying a tag to run from the feature files, e.g. `mvn test -Dcucumber.tags=@search`
 
