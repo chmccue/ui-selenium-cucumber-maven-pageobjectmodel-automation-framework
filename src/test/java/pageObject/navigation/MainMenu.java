@@ -1,7 +1,5 @@
 package pageObject.navigation;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import pageObject.AboutPage;
 import pageObject.BlogPage;
 import pageObject.ContactPage;
@@ -11,7 +9,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static sharedResources.supportMethods.CustomMethods.*;
-import static sharedResources.supportMethods.DriverMethods.driver;
 
 public class MainMenu {
 
@@ -24,18 +21,17 @@ public class MainMenu {
 
     //List mainMenuItems = {"About", "Home", "Contact", "Blog"};
 
-    public static WebElement mainMenuAboutLink() { return driver.findElement(By.cssSelector(mainMenuAbout_css)); }
-    public static WebElement mainMenuHomeLink() { return driver.findElement(By.cssSelector(mainMenuHome_css)); }
-    public static WebElement mainMenuContactLink() { return driver.findElement(By.cssSelector(mainMenuContact_css)); }
-    public static WebElement mainMenuBlogLink() { return driver.findElement(By.cssSelector(mainMenuBlog_css)); }
-
     public static void mainMenuSelectAboutLink() {
+        logData("Main Menu About Link");
         findAndClickElement(mainMenuAbout_css); }
     public static void mainMenuSelectHomeLink() {
+        logData("Main Menu Home Link");
         findAndClickElement(mainMenuHome_css); }
     public static void mainMenuSelectContactLink() {
+        logData("Main Menu Contact Link");
         findAndClickElement(mainMenuContact_css); }
     public static void mainMenuSelectBlogLink() {
+        logData("Main Menu Blog Link");
         findAndClickElement(mainMenuBlog_css); }
 
 

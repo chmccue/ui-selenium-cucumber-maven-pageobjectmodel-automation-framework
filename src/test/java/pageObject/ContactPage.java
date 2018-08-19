@@ -1,10 +1,6 @@
 package pageObject;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-
 import static sharedResources.supportMethods.CustomMethods.*;
-import static sharedResources.supportMethods.DriverMethods.driver;
 
 public class ContactPage {
 
@@ -18,28 +14,27 @@ public class ContactPage {
     public static String contactPageFormSubmitted_css = ".contact-form-submission";
 
 
-    public static WebElement contactPageContent() { return driver.findElement(By.cssSelector(contactPage_css));}
+    public static void contactPageContent() { verifyElementOnPage(contactPage_css);}
 
-    public static WebElement contactPageClickSubmitBtn() {
+    public static void contactPageClickSubmitBtn() {
         jsScrollElementIntoView(contactPageSubmitBtn_css);
-        return findAndClickElement(contactPageSubmitBtn_css);
+        findAndClickElement(contactPageSubmitBtn_css);
     }
 
     public static void contactPageEnterNameIntoField() {
         clearAndInputText(contactPageNameField_css, "autotest");
     }
     public static void contactPageEnterEmailIntoField() {
-        clearAndInputText(contactPageEmailField_css, "autotest9032842938722@test.com");
-    }
+        clearAndInputText(contactPageEmailField_css, "autotest9032842938722@test.com"); }
     public static void contactPageEnterCommentsIntoField() {
-        clearAndInputText(contactPageCommentField_css, "This is a comment to be added for testing.");
-    }
+        clearAndInputText(contactPageCommentField_css, "This is a comment to be added for testing."); }
 
-    public static WebElement contactPageFormSubmittedContent() {
+
+    public static void contactPageFormSubmittedContent() {
         elementShouldNotBePresent(contactPageNameField_css);
         elementShouldNotBePresent(contactPageEmailField_css);
         elementShouldNotBePresent(contactPageCommentField_css);
-        return driver.findElement(By.cssSelector(contactPageFormSubmitted_css)); }
+        verifyElementOnPage(contactPageFormSubmitted_css); }
 
     public static void contactPageFormSubmittedContentNotPresent() {
         verifyElementOnPage(contactPageNameField_css);

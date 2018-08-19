@@ -1,14 +1,11 @@
 package pageObject;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-
-import static sharedResources.supportMethods.DriverMethods.driver;
+import static sharedResources.supportMethods.CustomMethods.verifyElementOnPage;
 
 public class HomePage {
 
 	public static String homePage_css = ".home";
 
-	public static WebElement homePageContent() {return driver.findElement(By.cssSelector(homePage_css)); }
+	public static void homePageContent() {verifyElementOnPage(homePage_css); }
 
 }

@@ -9,11 +9,13 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import sharedResources.supportFactory.WebdriverFactory;
 import sharedResources.testRunner.TestRunner;
 
 public class Driver {
 
+	public static int waitTime = 10;
 	public static WebDriver webdriver;
 
 	public synchronized static WebDriver getCurrentDriver() {
@@ -28,6 +30,9 @@ public class Driver {
 		}
 		return webdriver;
 	}
+
+	public static WebDriver driver = Driver.getCurrentDriver();
+	public static WebDriverWait wait = new WebDriverWait(driver, waitTime);
 
 	public static String takeScreenshot(String filename) throws IOException {
 		
