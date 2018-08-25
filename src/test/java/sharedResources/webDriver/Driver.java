@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+//import com.vimalselvam.cucumber.listener.Reporter;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -51,6 +52,7 @@ public class Driver {
 		try {
 			byte[] screenshot = ((TakesScreenshot) getCurrentDriver()).getScreenshotAs(OutputType.BYTES);
 			TestRunner.scenario.embed(screenshot, "image/png");
+			//Reporter.addScreenCaptureFromPath("image/png");
 		} catch (WebDriverException somePlatformsDontSupportScreenshots) {
 			System.err.println(somePlatformsDontSupportScreenshots.getMessage());
 		}
