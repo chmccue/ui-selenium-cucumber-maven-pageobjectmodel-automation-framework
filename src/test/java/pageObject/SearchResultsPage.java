@@ -2,10 +2,15 @@ package pageObject;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import static sharedResources.supportMethods.CustomMethods.*;
+import static sharedResources.supportMethods.CustomElementMethods.*;
+import static sharedResources.supportMethods.CustomHelperMethods.getVarCount;
 import static sharedResources.webDriver.Driver.wait;
 
 public class SearchResultsPage {
+
+    //////////////////////////////////////////////////////
+    // ELEMENT LOCATOR VARIABLES
+    //////////////////////////////////////////////////////
 
     public static String searchResultsPage_css = ".search";
     public static String searchResultsNoResults_css = ".search-no-results";
@@ -17,6 +22,10 @@ public class SearchResultsPage {
 
     public static String searchResultsPageResult_xpath = "//article//*[@class='entry-title']";
 
+
+    //////////////////////////////////////////////////////
+    // PAGE OBJECT METHODS
+    //////////////////////////////////////////////////////
     public static void searchResultsPage() { verifyElementOnPage(searchResultsPage_css); }
     public static void searchResultsPage_NoResults() { verifyElementOnPage(searchResultsNoResults_css); }
     public static void searchResultsPage_NoResultsContent() { verifyElementOnPage(searchResultsNoResultsContent_css); }

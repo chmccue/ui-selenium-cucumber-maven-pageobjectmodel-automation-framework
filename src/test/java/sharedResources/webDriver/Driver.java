@@ -16,14 +16,15 @@ import sharedResources.testRunner.TestRunner;
 
 public class Driver {
 
-	public static int waitTime = 10;
+
+	public static int waitTime = 5;
 	public static WebDriver webdriver;
 
 	public synchronized static WebDriver getCurrentDriver() {
 		
 		if (webdriver == null) {
 			webdriver = WebdriverFactory.createWebdriver();
-			webdriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			webdriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 			webdriver.manage().window().maximize();
 
 			webdriver.get(TestRunner.config.get("baseUrl"));

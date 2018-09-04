@@ -10,7 +10,7 @@ public class GeneralPurpose {
 	}
 
 	@Then("^Embed a screenshot in the report$")
-	public void Embed_a_screenshot_in_the_report() throws Throwable {
+	public void Embed_a_screenshot_in_the_report() {
 		Driver.embedScreenshot();
 	}
 

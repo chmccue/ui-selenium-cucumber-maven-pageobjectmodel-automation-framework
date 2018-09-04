@@ -7,12 +7,12 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
-import sharedResources.supportMethods.CustomMethods;
+import sharedResources.supportMethods.CustomHelperMethods;
 import sharedResources.supportMethods.FileRead;
 import sharedResources.testRunner.TestRunner;
 import sharedResources.webDriver.Driver;
 
-import static sharedResources.supportMethods.CustomMethods.updateStoredUrl;
+import static sharedResources.supportMethods.CustomHelperMethods.updateStoredUrl;
 
 
 public class Hooks {
@@ -33,7 +33,7 @@ public class Hooks {
 	public void after(Scenario scenario) {
 		/* Method below resets storedUrl at end of test case, so the next test case will
 		   log Url without interference from previous test case. */
-		CustomMethods.storedUrl = updateStoredUrl("");
+		CustomHelperMethods.storedUrl = updateStoredUrl("");
 
 		if (scenario.isFailed()) {
 			Driver.embedScreenshot();

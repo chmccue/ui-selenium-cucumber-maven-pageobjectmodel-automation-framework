@@ -18,5 +18,3 @@ Feature: Navigate site
     Then I navigate the options of the archive menu
     #Then I select each menu and confirm it goes to the correct page
 
-
-

@@ -1,10 +1,18 @@
 package pageObject;
 
-import static sharedResources.supportMethods.CustomMethods.verifyElementOnPage;
+import static sharedResources.supportMethods.CustomElementMethods.verifyElementOnPage;
 
 public class HomePage {
 
+	//////////////////////////////////////////////////////
+	// ELEMENT LOCATOR VARIABLES
+	//////////////////////////////////////////////////////
+
 	public static String homePage_css = ".home";
+
+	//////////////////////////////////////////////////////
+	// PAGE OBJECT METHODS
+	//////////////////////////////////////////////////////
 
 	public static void homePageContent() {verifyElementOnPage(homePage_css); }
 

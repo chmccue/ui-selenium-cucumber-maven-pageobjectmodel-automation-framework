@@ -23,7 +23,7 @@ import org.junit.runner.RunWith;
 		plugin = {"pretty",
 				"html:target/cucumber",
 				"json:target/cucumber.json"
-				,"com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:target/extent/report.html"
+				,"com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:target/extent-report.html"
 		})
 public class TestRunner {
 

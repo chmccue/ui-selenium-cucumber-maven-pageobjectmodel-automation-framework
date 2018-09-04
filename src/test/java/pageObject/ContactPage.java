@@ -1,9 +1,13 @@
 package pageObject;
 
-import static sharedResources.supportMethods.CustomMethods.*;
+import static sharedResources.supportMethods.CustomElementMethods.*;
+import static sharedResources.supportMethods.CustomTextMethods.clearAndInputText;
 
 public class ContactPage {
 
+    //////////////////////////////////////////////////////
+    // ELEMENT LOCATOR VARIABLES
+    //////////////////////////////////////////////////////
     public static String contactPage_css = ".current_page_item [href*='/contact']";
 
     public static String contactPageNameField_css = "input.name";
@@ -14,7 +18,10 @@ public class ContactPage {
     public static String contactPageFormSubmitted_css = ".contact-form-submission";
 
 
-    public static void contactPageContent() { verifyElementOnPage(contactPage_css);}
+    //////////////////////////////////////////////////////
+    // PAGE OBJECT METHODS
+    //////////////////////////////////////////////////////
+    public static void contactPageContent() { verifyElementOnPage(contactPage_css); }
 
     public static void contactPageClickSubmitBtn() {
         jsScrollElementIntoView(contactPageSubmitBtn_css);

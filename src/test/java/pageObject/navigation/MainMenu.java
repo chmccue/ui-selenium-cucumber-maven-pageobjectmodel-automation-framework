@@ -8,9 +8,14 @@ import pageObject.HomePage;
 import java.util.HashMap;
 import java.util.Map;
 
-import static sharedResources.supportMethods.CustomMethods.*;
+import static sharedResources.supportMethods.CustomElementMethods.*;
+import static sharedResources.supportMethods.CustomHelperMethods.logData;
 
 public class MainMenu {
+
+    //////////////////////////////////////////////////////
+    // ELEMENT LOCATOR VARIABLES
+    //////////////////////////////////////////////////////
 
     static String mainMenuAbout_css = ".menu [href*='/about']";
     static String mainMenuHome_css = ".menu [href$='.com/']";
@@ -20,6 +25,10 @@ public class MainMenu {
     public static Map mainMenuMap = new HashMap();
 
     //List mainMenuItems = {"About", "Home", "Contact", "Blog"};
+
+    //////////////////////////////////////////////////////
+    // PAGE OBJECT METHODS
+    //////////////////////////////////////////////////////
 
     public static void mainMenuSelectAboutLink() {
         logData("Main Menu About Link");

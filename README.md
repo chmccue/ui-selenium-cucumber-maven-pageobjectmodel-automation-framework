@@ -5,6 +5,7 @@ Basic automation test framework following action and page object models, using S
 ## Log Report Examples
 ![Extent Report Example 1](extentReport1.png)
 ![Extent Report Example 2](extentReport2.png)
+![Extent Report Example 3](extentReport3.png)
 
 ## Software Requirements
 * [Maven](https://maven.apache.org/)
