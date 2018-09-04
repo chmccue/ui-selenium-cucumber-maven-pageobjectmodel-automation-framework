@@ -1,6 +1,10 @@
-# Java, Cucumber, JUnit and Selenium Automation Test Framework
+# Java, Cucumber, Maven, JUnit and Selenium Automation Test Framework
 
-Basic automation test framework following action and page object models, using Selenium to interact with the web browser, Cucumber to frame the tests, and JUnit to provide a standard report on the tests. Features built in support for local testing, Selenium Grid, and Browserstack, and uses Hamcrest for better reporting on test failures.
+Basic automation test framework following action and page object models, using Selenium to interact with the web browser, Cucumber to frame the tests, and Extent for elegant reporting. Features built in support for local testing, Selenium Grid, and Browserstack, and uses Hamcrest for better reporting on test failures.
+
+## Log Report Examples
+![Extent Report Example 1](extentReport1.png)
+![Extent Report Example 2](extentReport2.png)
 
 ## Software Requirements
 * [Maven](https://maven.apache.org/)
