@@ -1,0 +1,34 @@
+
+There are numerous ways set up to run these tests. This document provides some common examples
+
+
+
+If you want to run the test on a Selenium Grid running on Ubuntu, fill out the following
+(note that seleniumHub needs to have the unique grid Url in order to work. The below is just an example):
+     seleniumEnvironment:hub
+     browser:Chrome
+     browserVersion:
+     platform:Ubuntu
+     platformVersion:
+     seleniumHub:http://192.168.99.100:4444/wd/hub
+     browserstackResolution:
+     browserstackUsername:
+     browserstackPassword:
+     browserstackProject:
+     browserstackBuild:
+     baseUrl:https://easierautomation.wordpress.com
+
+
+To run the tests locally on a Windows computer, enter the following:
+     seleniumEnvironment:local
+     browser:Chrome
+     browserVersion:
+     platform:Windows
+     platformVersion:
+     seleniumHub:
+     browserstackResolution:
+     browserstackUsername:
+     browserstackPassword:
+     browserstackProject:
+     browserstackBuild:
+     baseUrl:https://easierautomation.wordpress.com

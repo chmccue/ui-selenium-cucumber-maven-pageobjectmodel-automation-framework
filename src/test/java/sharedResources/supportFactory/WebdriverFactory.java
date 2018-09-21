@@ -39,10 +39,11 @@ public class WebdriverFactory {
 				caps.merge(BrowserStack.setProjectDetails());
 				BrowserStack.setSeleniumHub();
 			}
+
 			PlatformFactory.selectPlatform(caps);
 			BrowserFactory.selectBrowser(caps);
 			WebdriverFactory.caps.merge(additionalCapabilities);
-			
+
 			String seleniumHub = TestRunner.config.get("seleniumHub");
 						
 			try {
